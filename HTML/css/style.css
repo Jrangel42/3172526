@@ -1,0 +1,38 @@
+/*
+	primer css
+	Jairo R
+	02/10/2025
+	
+# para llamar ID
+. para llamar clase
+*/
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F54927;
+}
+
+a{
+    font-size: 120%;
+    text-decoration: solid;
+    color: aquamarine;
+}
+
+img{
+    width: 300px;
+}
+
+#principal{
+    width: 300px;
+    border: 1px solid #000;
+}
+.secundario{
+    display: block;
+    float: left;
+    width: 98px;
+    height: 98px;
+    border: 1px solid #C8F527;
+    background-color: #F54927;
+}
+
+

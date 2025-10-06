@@ -1,0 +1,28 @@
+//JS es un lenguaje de programacion interpretado
+//todo lo que se abre se cierra
+//nombre de la variable:
+//var nameVariable;
+//let nameVariable;
+//const nameVariable;
+// comentario de una linea
+/*comentarios
+de mas
+de 2 lineas
+*/
+/* si en html escribimos codigo js el debe estar en medio 
+de las siguientes etiquetas 
+<script>
+	//code
+</script> 
+*/
+estructura de carpetas
+->numeroficha
+--->ejercicios js
+----->nombre del ejercicio
+------->css
+------->img
+------->js(carpeta)
+------->index.html(archivo)
+<html>
+
+</html>
