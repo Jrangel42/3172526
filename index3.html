@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Periódica</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <h1>Tabla Periódica</h1>
+
+    <div id="tabla-periodica" class="tabla">
+
+        <!-- Elemento ejemplo -->
+        <div class="elemento-ej" style="grid-row: 2; grid-column: 7">
+            <div class="mass">55.845</div>
+            <div class="atomic-number-ej">26</div>
+            <div class="symbol-ej">Fe</div>
+            <div class="name-ej">Hierro</div>
+            <div class="ionization">762.5</div>
+            <div class="config">[Ar] 3d⁶ 4s²</div>
+
+            <!-- Etiquetas -->
+            <div class="etiquetas" style="grid-row: 2; grid-column: 6;">
+                <span class="linea masa-l">masa atómica</span>
+                <span class="linea ionizacion-l">1.ª energía de ionización en kJ/mol</span>
+                <span class="linea numero-l">número atómico</span>
+                <span class="linea simbolo-l">símbolo químico</span>
+                <span class="linea nombre-l">nombre</span>
+                <span class="linea config-l">configuración electrónica</span>
+            </div>
+        </div>
+        
+        <div class="elemento nometal" style="grid-column-start: 1; grid-row-start: 1;">
+            <span class="numero">1</span>
+            <h3 class="simbolo">H</h3>
+            <p class="nombre">Hidrógeno</p>
+            <span class="masa-atomica">1.008</span>
+            <span class="ionizacion"> 1312.0</span>
+            <span class="configuración-electrónica">1s²</span>
+        </div>
+        <div class="elemento gasnoble" style="grid-column-start: 18; grid-row-start: 1;">
+            <span class="numero">2</span>
+            <h3 class="simbolo">He</h3>
+            <p class="nombre">Helio</p>
+            <span class="masa-atomica">4.003</span>
+            <span class="ionizacion"> 2372.3</span>
+            <span class="configuración-electrónica">1s²</span>
+        </div>
+        <div class="elemento metalesalcalinos" style="grid-column-start: 1; grid-row-start: 2;">
+            <span class="numero">3</span>
+            <h3 class="simbolo">Li</h3>
+            <p class="nombre">Litio</p>
+            <span class="masa-atomica">6.941</span>
+            <span class="ionizacion"> 520.2</span>
+            <span class="configuración-electrónica">1s² 2s¹</span>
+        </div>
+        <div class="elemento alcalinoterreos" style="grid-column-start: 2; grid-row-start: 2;">
+            <span class="numero">4</span>
+            <h3 class="simbolo">Be</h3>
+            <p class="nombre">Berilio</p>
+            <span class="masa-atomica">9.012</span>
+            <span class="ionizacion"> 899.5</span>
+            <span class="configuración-electrónica">1s² 2s²</span>
+        </div>
+        <div class="elemento metaloides" style="grid-column-start: 13; grid-row-start: 2;">
+            <span class="numero">5</span>
+            <h3 class="simbolo">B</h3>
+            <p class="nombre">Boro</p>
+            <span class="masa-atomica">10.811</span>
+            <span class="ionizacion"> 800.6</span>
+            <span class="configuración-electrónica">1s² 2s² 2p¹</span>
+        </div>
+        <div class="elemento nometal" style="grid-column-start: 14; grid-row-start: 2;">
+            <span class="numero">6</span>
+            <h3 class="simbolo">C</h3>
+            <p class="nombre">Carbono</p>
+            <span class="masa-atomica">12.01</span>
+            <span class="ionizacion">1086.5</span>
+            <span class="configuración-electrónica">1s² 2s² 2p²</span>
+        </div>
+        <div class="elemento nometal" style="grid-column-start: 15; grid-row-start: 2;">
+            <span class="numero">7</span>
+            <h3 class="simbolo">N</h3>
+            <p class="nombre">Nitrógeno</p>
+            <span class="masa-atomica">14.0067</span>
+            <span class="ionizacion"> 1402.3</span>
+            <span class="configuración-electrónica">1s² 2s² 2p³</span>
+        </div>
+        <div class="elemento nometal" style="grid-column-start: 16; grid-row-start: 2;">
+            <span class="numero">8</span>
+            <h3 class="simbolo">O</h3>
+            <p class="nombre">Oxígeno</p>
+            <span class="masa-atomica">15.99</span>
+            <span class="ionizacion">1313.9</span>
+            <span class="configuración-electrónica">1s² 2s² 2p⁴</span>
+        </div>
+        <div class="elemento halogenos" style="grid-column-start: 17; grid-row-start: 2;">
+            <span class="numero">9</span>
+            <h3 class="simbolo">F</h3>
+            <p class="nombre">Flúor</p>
+            <span class="masa-atomica">18.99</span>
+            <span class="ionizacion">1681.0</span>
+            <span class="configuración-electrónica">1s² 2s² 2p⁵</span>
+        </div>
+        <div class="elemento gasnoble" style="grid-column-start: 18; grid-row-start: 2;">
+            <span class="numero">10</span>
+            <h3 class="simbolo">Ne</h3>
+            <p class="nombre">Neón</p>
+            <span class="masa-atomica">20.17</span>
+            <span class="ionizacion">2080.7</span>
+            <span class="configuración-electrónica">1s² 2s² 2p⁶</span>
+        </div>
+        <div class="elemento metalesalcalinos" style="grid-column-start: 1; grid-row-start: 3;">
+            <span class="numero">11</span>
+            <h3 class="simbolo">Na</h3>
+            <p class="nombre">Sodio</p>
+            <span class="masa-atomica">22.98</span>
+            <span class="ionizacion">495.8</span>
+            <span class="configuración-electrónica">[Ne]3s¹</span>
+        </div>
+        <div class="elemento alcalinoterreos" style="grid-column-start: 2; grid-row-start: 3;">
+            <span class="numero">12</span>
+            <h3 class="simbolo">Mg</h3>
+            <p class="nombre">Magnesio</p>
+            <span class="masa-atomica">24.30</span>
+            <span class="ionizacion">737.7</span>
+            <span class="configuración-electrónica">[Ne]3s²</span>
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 13; grid-row-start: 3;">
+            <span class="numero">13</span>
+            <h3 class="simbolo">Al</h3>
+            <p class="nombre">Aluminio</p>
+            <span class="masa-atomica">26.98</span>
+            <span class="ionizacion">577.5</span>
+            <span class="configuración-electrónica">[Ne] 3s² 3p¹</span>
+        </div>
+        <div class="elemento metaloides" style="grid-column-start: 14; grid-row-start: 3;">
+            <span class="numero">14</span>
+            <h3 class="simbolo">Si</h3>
+            <p class="nombre">Silicio</p>
+            <span class="masa-atomica">28.05</span>
+            <span class="ionizacion">786.5</span>
+            <span class="configuración-electrónica">[Ne] 3s² 3p²</span>
+        </div>
+        <div class="elemento nometal" style="grid-column-start: 15; grid-row-start: 3;">
+            <span class="numero">15</span>
+            <h3 class="simbolo">P</h3>
+            <p class="nombre">Fósforo</p>
+            <span class="masa-atomica">30.97</span>
+            <span class="ionizacion">1011.8</span>
+            <span class="configuración-electrónica">[Ne] 3s² 3p³</span>
+        </div>
+        <div class="elemento nometal" style="grid-column-start: 16; grid-row-start: 3;">
+            <span class="numero">16</span>
+            <h3 class="simbolo">S</h3>
+            <p class="nombre">Azufre</p>
+            <span class="masa-atomica">36.06</span>
+            <span class="ionizacion">999.6</span>
+            <span class="configuración-electrónica">[Ne] 3s² 3p⁴</span>
+        </div>
+        <div class="elemento halogenos" style="grid-column-start: 17; grid-row-start: 3;">
+            <span class="numero">17</span>
+            <h3 class="simbolo">Cl</h3>
+            <p class="nombre">Cloro</p>
+            <span class="masa-atomica">35.45</span>
+            <span class="ionizacion">1251.2</span>
+            <span class="configuración-electrónica">[Ne] 3s² 3p⁵</span>
+        </div>
+        <div class="elemento gasnoble" style="grid-column-start: 18; grid-row-start: 3;">
+            <span class="numero">18</span>
+            <h3 class="simbolo">Ar</h3>
+            <p class="nombre">Argón</p>
+            <span class="masa-atomica">39.94</span>
+            <span class="ionizacion">1520.6</span>
+            <span class="configuración-electrónica">[Ne] 3s² 3p⁶</span>
+        </div>
+        <div class="elemento metalesalcalinos" style="grid-column-start: 1; grid-row-start: 4;">
+            <span class="numero">19</span>
+            <h3 class="simbolo">K</h3>
+            <p class="nombre">Potasio</p>
+            <span class="masa-atomica">39.09</span>
+            <span class="ionizacion">418.8</span>
+            <span class="configuración-electrónica">[Ar] 4s¹</span>
+        </div>
+        <div class="elemento alcalinoterreos" style="grid-column-start: 2; grid-row-start: 4;">
+            <span class="numero">20</span>
+            <h3 class="simbolo">Ca</h3>
+            <p class="nombre">Calcio</p>
+            <span class="masa-atomica">40.07</span>
+            <span class="ionizacion">589.8</span>
+            <span class="configuración-electrónica">[Ar] 4s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 3; grid-row-start: 4;">
+            <span class="numero">21</span>
+            <h3 class="simbolo">Sc</h3>
+            <p class="nombre">Escandio</p>
+            <span class="masa-atomica">44.95</span>
+            <span class="ionizacion">633.1</span>
+            <span class="configuración-electrónica">[Ar] 3d¹ 4s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 4; grid-row-start: 4;">
+            <span class="numero">22</span>
+            <h3 class="simbolo">Ti</h3>
+            <p class="nombre">Titanio</p>
+            <span class="masa-atomica">47.88</span>
+            <span class="ionizacion">658.8</span>
+            <span class="configuración-electrónica">[Ar] 3d² 4s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 5; grid-row-start: 4;">
+            <span class="numero">23</span>
+            <h3 class="simbolo">V</h3>
+            <p class="nombre">Vanadio</p>
+            <span class="masa-atomica">50.94</span>
+            <span class="ionizacion">650.9</span>
+            <span class="configuración-electrónica">[Ar] 3d³ 4s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 6; grid-row-start: 4;">
+            <span class="numero">24</span>
+            <h3 class="simbolo">Cr</h3>
+            <p class="nombre">Cromo</p>
+            <span class="masa-atomica">51.99</span>
+            <span class="ionizacion">652.9</span>
+            <span class="configuración-electrónica">[Ar] 3d³ 4s¹</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 7; grid-row-start: 4;">
+            <span class="numero">25</span>
+            <h3 class="simbolo">Mn</h3>
+            <p class="nombre">Manganeso</p>
+            <span class="masa-atomica">54.93</span>
+            <span class="ionizacion">717.3</span>
+            <span class="configuración-electrónica">[Ar] 3d⁵ 4s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 8; grid-row-start: 4;">
+            <span class="numero">26</span>
+            <h3 class="simbolo">Fe</h3>
+            <p class="nombre">Hierro</p>
+            <span class="masa-atomica">55.84</span>
+            <span class="ionizacion">762.5</span>
+            <span class="configuración-electrónica">[Ar] 3d⁶ 4s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 9; grid-row-start: 4;">
+            <span class="numero">27</span>
+            <h3 class="simbolo">Co</h3>
+            <p class="nombre">Cobalto</p>
+            <span class="masa-atomica">59.933</span>
+            <span class="ionizacion">760.4</span>
+            <span class="configuración-electrónica">[Ar] 3d⁷ 4s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 10; grid-row-start: 4;">
+            <span class="numero">28</span>
+            <h3 class="simbolo">Ni</h3>
+            <p class="nombre">Níquel</p>
+            <span class="masa-atomica">58.69</span>
+            <span class="ionizacion">737.1</span>
+            <span class="configuración-electrónica">[Ar] 3d⁸ 4s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 11; grid-row-start: 4;">
+            <span class="numero">29</span>
+            <h3 class="simbolo">Cu</h3>
+            <p class="nombre">Cobre</p>
+            <span class="masa-atomica">63.54</span>
+            <span class="ionizacion">745.5</span>
+            <span class="configuración-electrónica">[Ar] 3d¹⁰ 4s¹</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 12; grid-row-start: 4;">
+            <span class="numero">30</span>
+            <h3 class="simbolo">Zn</h3>
+            <p class="nombre">Zinc</p>
+            <span class="masa-atomica">65.39</span>
+            <span class="ionizacion">906.4</span>
+            <span class="configuración-electrónica">[Ar] 3d¹⁰ 4s²</span>
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 13; grid-row-start: 4;">
+            <span class="numero">31</span>
+            <h3 class="simbolo">Ga</h3>
+            <p class="nombre">Galio</p>
+            <span class="masa-atomica">69.72</span>
+            <span class="ionizacion">578.8</span>
+            <span class="configuración-electrónica">[Ar] 3d¹⁰ 4s² 4p¹</span>
+        </div>
+        <div class="elemento metaloides" style="grid-column-start: 14; grid-row-start: 4;">
+            <span class="numero">32</span>
+            <h3 class="simbolo">Ge</h3>
+            <p class="nombre">Germanio</p>
+            <span class="masa-atomica">72.61</span>
+            <span class="ionizacion">762.0</span>
+            <span class="configuración-electrónica">[Ar] 3d¹⁰ 4s² 4p²</span>
+        </div>
+        <div class="elemento metaloides" style="grid-column-start: 15; grid-row-start: 4;">
+            <span class="numero">33</span>
+            <h3 class="simbolo">As</h3>
+            <p class="nombre">Arsénico</p>
+            <span class="masa-atomica">74.91</span>
+            <span class="ionizacion">947.0</span>
+            <span class="configuración-electrónica">[Ar] 3d¹⁰ 4s² 4p³</span>
+        </div>
+        <div class="elemento nometal" style="grid-column-start: 16; grid-row-start: 4;">
+            <span class="numero">34</span>
+            <h3 class="simbolo">Se</h3>
+            <p class="nombre">Selenio</p>
+            <span class="masa-atomica">78.96</span>
+            <span class="ionizacion">941.0</span>
+            <span class="configuración-electrónica">[Ar] 3d¹⁰ 4s² 4p⁴</span>
+        </div>
+        <div class="elemento halogenos" style="grid-column-start: 17; grid-row-start: 4;">
+            <span class="numero">35</span>
+            <h3 class="simbolo">Br</h3>
+            <p class="nombre">Bromo</p>
+            <span class="masa-atomica">79.06</span>
+            <span class="ionizacion">1139.9</span>
+            <span class="configuración-electrónica">[Ar] 3d¹⁰ 4s² 4p⁵</span>
+        </div>
+        <div class="elemento gasnoble" style="grid-column-start: 18; grid-row-start: 4;">
+            <span class="numero">36</span>
+            <h3 class="simbolo">Kr</h3>
+            <p class="nombre">Kriptón</p>
+            <span class="masa-atomica">83.80</span>
+            <span class="ionizacion">1350.8</span>
+            <span class="configuración-electrónica">[Ar] 3d¹⁰ 4s² 4p⁶</span>
+        </div>
+        <div class="elemento metalesalcalinos" style="grid-column-start: 1; grid-row-start: 5;">
+            <span class="numero">37</span>
+            <h3 class="simbolo">Rb</h3>
+            <p class="nombre">Rubidio</p>
+            <span class="masa-atomica">85.46</span>
+            <span class="ionizacion">403.0</span>
+            <span class="configuración-electrónica">[Kr] 5s¹</span>
+        </div>
+        <div class="elemento alcalinoterreos" style="grid-column-start: 2; grid-row-start: 5;">
+            <span class="numero">38</span>
+            <h3 class="simbolo">Sr</h3>
+            <p class="nombre">Estroncio</p>
+            <span class="masa-atomica">87.62</span>
+            <span class="ionizacion">549.5</span>
+            <span class="configuración-electrónica">[Kr] 5s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 3; grid-row-start: 5;">
+            <span class="numero">39</span>
+            <h3 class="simbolo">Y</h3>
+            <p class="nombre">Itrio</p>
+            <span class="masa-atomica">88.90</span>
+            <span class="ionizacion">600.0</span>
+            <span class="configuración-electrónica">[Kr] 4d¹ 5s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 4; grid-row-start: 5;">
+            <span class="numero">40</span>
+            <h3 class="simbolo">Zr</h3>
+            <p class="nombre">Circonio</p>
+            <span class="masa-atomica">91.223</span>
+            <span class="ionizacion">640.1</span>
+            <span class="configuración-electrónica">[Kr] 4d² 5s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 5; grid-row-start: 5;">
+            <span class="numero">41</span>
+            <h3 class="simbolo">Nb</h3>
+            <p class="nombre">Niobio</p>
+            <span class="masa-atomica">92.90</span>
+            <span class="ionizacion">652.1</span>
+            <span class="configuración-electrónica">[Kr] 4d⁴ 5s¹</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 6; grid-row-start: 5;">
+            <span class="numero">42</span>
+            <h3 class="simbolo">Mo</h3>
+            <p class="nombre">Molibdeno</p>
+            <span class="masa-atomica">95.94</span>
+            <span class="ionizacion">684.3</span>
+            <span class="configuración-electrónica">[Kr] 4d⁵ 5s¹</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 7; grid-row-start: 5;">
+            <span class="numero">43</span>
+            <h3 class="simbolo">Tc</h3>
+            <p class="nombre">Tecnecio</p>
+            <span class="masa-atomica">97.90</span>
+            <span class="ionizacion">702.0</span>
+            <span class="configuración-electrónica">[Kr] 4d⁵ 5s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 8; grid-row-start: 5;">
+            <span class="numero">44</span>
+            <h3 class="simbolo">Ru</h3>
+            <p class="nombre">Rutenio</p>
+            <span class="masa-atomica">101.07</span>
+            <span class="ionizacion">710.2</span>
+            <span class="configuración-electrónica">[Kr] 4d⁷ 5s¹</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 9; grid-row-start: 5;">
+            <span class="numero">45</span>
+            <h3 class="simbolo">Rh</h3>
+            <p class="nombre">Rodio</p>
+            <span class="masa-atomica">102.9</span>
+            <span class="ionizacion">720</span>
+            <span class="configuración-electrónica">[Kr] 4d⁸ 5s¹</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 10; grid-row-start: 5;">
+            <span class="numero">46</span>
+            <h3 class="simbolo">Pd</h3>
+            <p class="nombre">Paladio</p>
+            <span class="masa-atomica">106.42</span>
+            <span class="ionizacion">800</span> 
+            <span class="configuración-electrónica">[Kr] 4d¹⁰</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 11; grid-row-start: 5;">
+            <span class="numero">47</span>
+            <h3 class="simbolo">Ag</h3>
+            <p class="nombre">Plata</p>
+            <span class="masa-atomica">107.8682</span>
+            <span class="ionizacion">731</span>
+            <span class="configuración-electrónica">[Kr] 4d¹⁰ 5s¹</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 12; grid-row-start: 5;">
+            <span class="numero">48</span>
+            <h3 class="simbolo">Cd</h3>
+            <p class="nombre">Cadmio</p><span class="masa-atomica">112.411</span>
+            <span class="ionizacion">867</span>
+            <span class="configuración-electrónica">[Kr] 4d¹⁰ 5s²</span>
+            
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 13; grid-row-start: 5;">
+            <span class="numero">49</span>
+            <h3 class="simbolo">In</h3>
+            <p class="nombre">Indio</p>
+            <span class="masa-atomica">114.818</span>
+            <span class="ionizacion">558</span>
+            <span class="configuración-electrónica">[Kr] 4d¹⁰ 5s² 5p¹</span>
+
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 14; grid-row-start: 5;">
+            <span class="numero">50</span>
+            <h3 class="simbolo">Sn</h3>
+            <p class="nombre">Estaño</p>
+            <span class="masa-atomica">118.710</span>
+            <span class="ionizacion">708</span>
+            <span class="configuración-electrónica">[Kr] 4d¹⁰ 5s² 5p²</span>
+        </div>
+        <div class="elemento metaloides" style="grid-column-start: 15; grid-row-start: 5;">
+            <span class="numero">51</span>
+            <h3 class="simbolo">Sb</h3>
+            <p class="nombre">Antimonio</p>
+            <span class="masa-atomica">121.760</span>
+            <span class="ionizacion">834</span>
+            <span class="configuración-electrónica">[Kr] 4d¹⁰ 5s² 5p³</span>
+        </div>
+        <div class="elemento metaloides" style="grid-column-start: 16; grid-row-start: 5;">
+            <span class="numero">52</span>
+            <h3 class="simbolo">Te</h3>
+            <p class="nombre">Telurio</p>
+            <span class="masa-atomica">127.60</span>
+            <span class="ionizacion">869</span>
+            <span class="configuración-electrónica">[Kr] 4d¹⁰ 5s² 5p⁴</span>
+        </div>
+        <div class="elemento halogenos" style="grid-column-start: 17; grid-row-start: 5;">
+            <span class="numero">53</span>
+            <h3 class="simbolo">I</h3>
+            <p class="nombre">Yodo</p>
+            <span class="masa-atomica">126.90447</span>
+            <span class="ionizacion">1008</span>
+            <span class="configuración-electrónica">[Kr] 4d¹⁰ 5s² 5p⁵</span>
+        </div>
+        <div class="elemento gasnoble" style="grid-column-start: 18; grid-row-start: 5;">
+            <span class="numero">54</span>
+            <h3 class="simbolo">Xe</h3>
+            <p class="nombre">Xenón</p>
+            <span class="masa-atomica">131.29</span>
+            <span class="ionizacion">1170</span>
+            <span class="configuración-electrónica">[Kr] 4d¹⁰ 5s² 5p⁶</span>
+        </div>
+        <div class="elemento metalesalcalinos" style="grid-column-start: 1; grid-row-start: 6;">
+            <span class="numero">55</span>
+            <h3 class="simbolo">Cs</h3>
+            <p class="nombre">Cesio</p><span class="masa-atomica">132.90545</span>
+            <span class="ionizacion">375.7</span>
+            <span class="configuración-electrónica">[Xe] 6s¹</span>
+        </div>
+        <div class="elemento alcalinoterreos" style="grid-column-start: 2; grid-row-start: 6;">
+            <span class="numero">56</span>
+            <h3 class="simbolo">Ba</h3>
+            <p class="nombre">Bario</p>
+            <span class="masa-atomica">137.327</span>
+            <span class="ionizacion">502.9</span>
+            <span class="configuración-electrónica">[Xe] 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 3; grid-row-start: 6;">
+            <span class="numero">57</span>
+            <h3 class="simbolo">La</h3>
+            <p class="nombre">Lantano</p>
+            <span class="masa-atomica">138.9055</span>
+            <span class="ionizacion">538.1</span>
+            <span class="configuración-electrónica">[Xe] 5d¹ 6s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 4; grid-row-start: 6;">
+            <span class="numero">72</span>
+            <h3 class="simbolo">Hf</h3>
+            <p class="nombre">Hafnio</p>
+            <span class="masa-atomica">178.49</span>
+            <span class="ionizacion">6.825</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d² 6s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 5; grid-row-start: 6;">
+            <span class="numero">73</span>
+            <h3 class="simbolo">Ta</h3>
+            <p class="nombre">Tantalio</p>
+            <span class="masa-atomica">180.94</span>
+            <span class="ionizacion">7.5496</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d³ 6s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 6; grid-row-start: 6;">
+            <span class="numero">74</span>
+            <h3 class="simbolo">W</h3>
+            <p class="nombre">Wolframio</p>
+            <span class="masa-atomica">183.84</span>
+            <span class="ionizacion">7.864</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d⁴ 6s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 7; grid-row-start: 6;">
+            <span class="numero">75</span>
+            <h3 class="simbolo">Re</h3>
+            <p class="nombre">Renio</p>
+            <span class="masa-atomica">186.2</span>
+            <span class="ionizacion">8.833</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d⁶ 6s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 8; grid-row-start: 6;">
+            <span class="numero">76</span>
+            <h3 class="simbolo">Os</h3>
+            <p class="nombre">Osmio</p>
+            <span class="masa-atomica">190.23</span>
+            <span class="ionizacion">8.438</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d⁶ 6s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 9; grid-row-start: 6;">
+            <span class="numero">77</span>
+            <h3 class="simbolo">Ir</h3>
+            <p class="nombre">Iridio</p>
+            <span class="masa-atomica">192.21</span>
+            <span class="ionizacion">9.10</span> <!-- valor aproximado -->
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d⁷ 6s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 10; grid-row-start: 6;">
+            <span class="numero">78</span>
+            <h3 class="simbolo">Pt</h3>
+            <p class="nombre">Platino</p>
+            <span class="masa-atomica">195.08</span>
+            <span class="ionizacion">8.95</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d⁹ 6s¹</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 11; grid-row-start: 6;">
+            <span class="numero">79</span>
+            <h3 class="simbolo">Au</h3>
+            <p class="nombre">Oro</p>
+            <span class="masa-atomica">196.96</span>
+            <span class="ionizacion">9.225</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d¹⁰ 6s¹</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 12; grid-row-start: 6;">
+            <span class="numero">80</span>
+            <h3 class="simbolo">Hg</h3>
+            <p class="nombre">Mercurio</p>
+            <span class="masa-atomica">200.59</span>
+            <span class="ionizacion">10.437</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d¹⁰ 6s²</span>
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 13; grid-row-start: 6;">
+            <span class="numero">81</span>
+            <h3 class="simbolo">Tl</h3>
+            <p class="nombre">Talio</p>
+            <span class="masa-atomica">204.38</span>
+            <span class="ionizacion">6.108</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d¹⁰ 6s² 6p¹</span>
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 14; grid-row-start: 6;">
+            <span class="numero">82</span>
+            <h3 class="simbolo">Pb</h3>
+            <p class="nombre">Plomo</p>
+            <span class="masa-atomica">207.2</span>
+            <span class="ionizacion">7.416</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴5d¹⁰ 6s² 6p²</span>
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 15; grid-row-start: 6;">
+            <span class="numero">83</span>
+            <h3 class="simbolo">Bi</h3>
+            <p class="nombre">Bismuto</p>
+            <span class="masa-atomica">208.98</span>
+            <span class="ionizacion">7.285</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d¹⁰ 6s² 6p³</span>
+        </div>
+        <div class="elemento metaloides" style="grid-column-start: 16; grid-row-start: 6;">
+            <span class="numero">84</span>
+            <h3 class="simbolo">Po</h3>
+            <p class="nombre">Polonio</p>
+            <span class="masa-atomica">209</span>
+            <span class="ionizacion">8.41</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d¹⁰ 6s² 6p⁴</span>
+        </div>
+        <div class="elemento halogenos" style="grid-column-start: 17; grid-row-start: 6;">
+            <span class="numero">85</span>
+            <h3 class="simbolo">At</h3>
+            <p class="nombre">Astato</p>
+            <span class="masa-atomica">210</span>
+            <span class="ionizacion">9.31</span> 
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d¹⁰ 6s² 6p⁵</span>
+        </div>
+        <div class="elemento gasnoble" style="grid-column-start: 18; grid-row-start: 6;">
+            <span class="numero">86</span>
+            <h3 class="simbolo">Rn</h3>
+            <p class="nombre">Radón</p>
+            <span class="masa-atomica">222</span>
+            <span class="ionizacion">10.74</span>
+            <span class="configuración-electrónica">[Xe]4f¹⁴ 5d¹⁰ 6s² 6p⁶</span>
+        </div>
+        <div class="elemento metalesalcalinos" style="grid-column-start: 1; grid-row-start: 7;">
+            <span class="numero">87</span>
+            <h3 class="simbolo">Fr</h3>
+            <p class="nombre">Francio</p>
+            <span class="masa-atomica">(223)</span>
+            <span class="ionizacion">4.072</span> 
+            <span class="configuración-electrónica">[Rn]7s¹</span>
+        </div>
+        <div class="elemento alcalinoterreos" style="grid-column-start: 2; grid-row-start: 7;">
+            <span class="numero">88</span>
+            <h3 class="simbolo">Ra</h3>
+            <p class="nombre">Radio</p>
+            <span class="masa-atomica">226.02</span>
+            <span class="ionizacion">5.279</span>
+            <span class="configuración-electrónica">[Rn]7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 3; grid-row-start: 7;">
+            <span class="numero">89</span>
+            <h3 class="simbolo">Ac</h3>
+            <p class="nombre">Actinio</p>
+            <span class="masa-atomica">227</span>
+            <span class="ionizacion">5.17</span>
+            <span class="configuración-electrónica">[Rn]6d¹ 7s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 4; grid-row-start: 7;">
+            <span class="numero">104</span>
+            <h3 class="simbolo">Rf</h3>
+            <p class="nombre">Rutherfordio</p>
+            <span class="masa-atomica">261.10</span>
+            <span class="ionizacion">—</span> 
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d² 7s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 5; grid-row-start: 7;">
+            <span class="numero">105</span>
+            <h3 class="simbolo">Db</h3>
+            <p class="nombre">Dubnio</p>
+            <span class="masa-atomica">268</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d³ 7s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 6; grid-row-start: 7;">
+            <span class="numero">106</span>
+            <h3 class="simbolo">Sg</h3>
+            <p class="nombre">Seaborgio</p>
+            <span class="masa-atomica">271</span> 
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴6d⁴ 7s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 7; grid-row-start: 7;">
+            <span class="numero">107</span>
+            <h3 class="simbolo">Bh</h3>
+            <p class="nombre">Bohrio</p>
+            <span class="masa-atomica">270</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d⁵ 7s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 8; grid-row-start: 7;">
+            <span class="numero">108</span>
+            <h3 class="simbolo">Hs</h3>
+            <p class="nombre">Hassio</p>
+            <span class="masa-atomica">277</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d⁶ 7s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 9; grid-row-start: 7;">
+            <span class="numero">109</span>
+            <h3 class="simbolo">Mt</h3>
+            <p class="nombre">Meitnerio</p>
+            <span class="masa-atomica">278</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d⁷ 7s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 10; grid-row-start: 7;">
+            <span class="numero">110</span>
+            <h3 class="simbolo">Ds</h3>
+            <p class="nombre">Darmstatio</p>
+            <span class="masa-atomica">281</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d⁸ 7s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 11; grid-row-start: 7;">
+            <span class="numero">111</span>
+            <h3 class="simbolo">Rg</h3>
+            <p class="nombre">Roentgenio</p>
+            <span class="masa-atomica">282</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d⁹ 7s²</span>
+        </div>
+        <div class="elemento metales-transicion" style="grid-column-start: 12; grid-row-start: 7;">
+            <span class="numero">112</span>
+            <h3 class="simbolo">Cn</h3>
+            <p class="nombre">Copernicio</p>
+            <span class="masa-atomica">285</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d¹⁰ 7s²</span>
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 13; grid-row-start: 7;">
+            <span class="numero">113</span>
+            <h3 class="simbolo">Nh</h3>
+            <p class="nombre">Nihonio</p>
+            <span class="masa-atomica">286</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d¹⁰ 7s² 7p¹</span>
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 14; grid-row-start: 7;">
+            <span class="numero">114</span>
+            <h3 class="simbolo">Fl</h3>
+            <p class="nombre">Flerovio</p>
+            <span class="masa-atomica">289</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d¹⁰ 7s² 7p²</span>
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 15; grid-row-start: 7;">
+            <span class="numero">115</span>
+            <h3 class="simbolo">Mc</h3>
+            <p class="nombre">Moscovio</p>
+            <span class="masa-atomica">290</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d¹⁰ 7s² 7p³</span>
+        </div>
+        <div class="elemento otrosmetales" style="grid-column-start: 16; grid-row-start: 7;">
+            <span class="numero">116</span>
+            <h3 class="simbolo">Lv</h3>
+            <p class="nombre">Livermorio</p>
+            <span class="masa-atomica">293</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d¹⁰ 7s² 7p⁴</span>
+        </div>
+        <div class="elemento halogenos" style="grid-column-start: 17; grid-row-start: 7;">
+            <span class="numero">117</span>
+            <h3 class="simbolo">Ts</h3>
+            <p class="nombre">Tenesino</p>
+            <span class="masa-atomica">294</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d¹⁰ 7s² 7p⁵</span>
+        </div>
+        <div class="elemento gasnoble" style="grid-column-start: 18; grid-row-start: 7;">
+            <span class="numero">118</span>
+            <h3 class="simbolo">Og</h3>
+            <p class="nombre">Oganesón</p>
+        </div>
+
+        <!-- Lantánidos y Actínidos -->
+        <div class="elemento lantanidos" style="grid-column-start: 4; grid-row-start: 9;">
+            <span class="numero">58</span>
+            <h3 class="simbolo">Ce</h3>
+            <p class="nombre">Cerio</p>
+            <span class="masa-atomica">140.12</span>
+            <span class="ionizacion">527.0</span>
+            <span class="configuración-electrónica">[Xe]4f¹ 5d¹ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 5; grid-row-start: 9;">
+            <span class="numero">59</span>
+            <h3 class="simbolo">Pr</h3>
+            <p class="nombre">Praseodimio</p>
+            <span class="masa-atomica">140.91</span>
+            <span class="ionizacion">527.0</span>
+            <span class="configuración-electrónica">[Xe] 4f³ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 6; grid-row-start: 9;">
+            <span class="numero">60</span>
+            <h3 class="simbolo">Nd</h3>
+            <p class="nombre">Neodimio</p>
+            <span class="masa-atomica">144.24</span>
+            <span class="ionizacion">533.1</span>
+            <span class="configuración-electrónica">[Xe] 4f⁴ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 7; grid-row-start: 9;">
+            <span class="numero">61</span>
+            <h3 class="simbolo">Pm</h3>
+            <p class="nombre">Prometio</p>
+            <span class="masa-atomica">144.91</span>
+            <span class="ionizacion">5.55</span>
+            <span class="configuración-electrónica">[Xe] 4f⁵ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 8; grid-row-start: 9;">
+            <span class="numero">62</span>
+            <h3 class="simbolo">Sm</h3>
+            <p class="nombre">Samario</p>
+            <span class="masa-atomica">150.4</span>
+            <span class="ionizacion">5.644</span> 
+            <span class="configuración-electrónica">[Xe] 4f⁶ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 9; grid-row-start: 9;">
+            <span class="numero">63</span>
+            <h3 class="simbolo">Eu</h3>
+            <p class="nombre">Europio</p>
+            <span class="masa-atomica">151.96</span>
+            <span class="ionizacion">5.670</span> 
+            <span class="configuración-electrónica">[Xe] 4f⁷ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 10; grid-row-start: 9;">
+            <span class="numero">64</span>
+            <h3 class="simbolo">Gd</h3>
+            <p class="nombre">Gadolinio</p>
+            <span class="masa-atomica">157.2</span>
+            <span class="ionizacion">6.150</span> 
+            <span class="configuración-electrónica">[Xe] 4f⁷ 5d¹ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 11; grid-row-start: 9;">
+            <span class="numero">65</span>
+            <h3 class="simbolo">Tb</h3>
+            <p class="nombre">Terbio</p>
+            <span class="masa-atomica">158.925</span>
+            <span class="ionizacion">5.864</span> 
+            <span class="configuración-electrónica">[Xe] 4f⁹ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 12; grid-row-start: 9;">
+            <span class="numero">66</span>
+            <h3 class="simbolo">Dy</h3>
+            <p class="nombre">Disprosio</p>
+            <span class="masa-atomica">162.50</span>
+            <span class="ionizacion">—</span> 
+            <span class="configuración-electrónica">[Xe] 4f¹⁰ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 13; grid-row-start: 9;">
+            <span class="numero">67</span>
+            <h3 class="simbolo">Ho</h3>
+            <p class="nombre">Holmio</p>
+            <span class="masa-atomica">—</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Xe]4f¹¹ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 14; grid-row-start: 9;">
+            <span class="numero">68</span>
+            <h3 class="simbolo">Er</h3>
+            <p class="nombre">Erbio</p>
+            <span class="masa-atomica">—</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Xe] 4f¹² 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 15; grid-row-start: 9;">
+            <span class="numero">69</span>
+            <h3 class="simbolo">Tm</h3>
+            <p class="nombre">Tulio</p>
+            <span class="masa-atomica">—</span>
+            <span class="ionizacion">—</span>
+            <span class="configuración-electrónica">[Xe] 4f¹³ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 16; grid-row-start: 9;">
+            <span class="numero">70</span>
+            <h3 class="simbolo">Yb</h3>
+            <p class="nombre">Iterbio</p>
+            <span class="masa-atomica">173.04</span>
+            <span class="ionizacion">6.254</span> 
+            <span class="configuración-electrónica">[Xe] 4f¹⁴ 6s²</span>
+        </div>
+        <div class="elemento lantanidos" style="grid-column-start: 17; grid-row-start: 9;">
+            <span class="numero">71</span>
+            <h3 class="simbolo">Lu</h3>
+            <p class="nombre">Lutecio</p>   
+            <span class="masa-atomica">174.967</span>
+            <span class="ionizacion">5.4259</span> 
+            <span class="configuración-electrónica">[Xe] 4f¹⁴ 5d¹ 6s²</span>
+        </div>
+
+        <div class="elemento actinidos" style="grid-column-start: 4; grid-row-start: 10;">
+            <span class="numero">90</span>
+            <h3 class="simbolo">Th</h3>
+            <p class="nombre">Torio</p>
+            <span class="masa-atomica">232.0381</span>
+            <span class="ionizacion">587</span>
+            <span class="configuración-electrónica">[Rn] 6d² 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 5; grid-row-start: 10;">
+            <span class="numero">91</span>
+            <h3 class="simbolo">Pa</h3>
+            <p class="nombre">Protactinio</p>
+            <span class="masa-atomica">231.035</span>
+            <span class="ionizacion">568</span>
+            <span class="configuración-electrónica">[Rn] 5f² 6d¹ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 6; grid-row-start: 10;">
+            <span class="numero">92</span>
+            <h3 class="simbolo">U</h3>
+            <p class="nombre">Uranio</p>
+            <span class="masa-atomica">238.02</span>
+            <span class="ionizacion">597.6</span>
+            <span class="configuración-electrónica">[Rn] 5f³ 6d¹ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 7; grid-row-start: 10;">
+            <span class="numero">93</span>
+            <h3 class="simbolo">Np</h3>
+            <p class="nombre">Neptunio</p>
+            <span class="masa-atomica">237.048</span>
+            <span class="ionizacion">604.5</span>
+            <span class="configuración-electrónica">[Rn]5f⁴ 6d¹ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 8; grid-row-start: 10;">
+            <span class="numero">94</span>
+            <h3 class="simbolo">Pu</h3>
+            <p class="nombre">Plutonio</p>
+            <span class="masa-atomica">244.6</span>
+            <span class="ionizacion">584.7</span>
+            <span class="configuración-electrónica">[Rn] 5f⁶ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 9; grid-row-start: 10;">
+            <span class="numero">95</span>
+            <h3 class="simbolo">Am</h3>
+            <p class="nombre">Americio</p>
+            <span class="masa-atomica">243.06</span>
+            <span class="ionizacion">578</span>
+            <span class="configuración-electrónica">[Rn] 5f⁷ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 10; grid-row-start: 10;">
+            <span class="numero">96</span>
+            <h3 class="simbolo">Cm</h3>
+            <p class="nombre">Curio</p>
+            <span class="masa-atomica">247.07</span>
+            <span class="ionizacion">581</span>
+            <span class="configuración-electrónica">[Rn] 5f⁷ 6d¹ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 11; grid-row-start: 10;">
+            <span class="numero">97</span>
+            <h3 class="simbolo">Bk</h3>
+            <p class="nombre">Berkelio</p>
+            <span class="masa-atomica">247.07</span>
+            <span class="ionizacion">601</span>
+            <span class="configuración-electrónica">[Rn] 5f⁹ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 12; grid-row-start: 10;">
+            <span class="numero">98</span>
+            <h3 class="simbolo">Cf</h3>
+            <p class="nombre">Californio</p>
+            <span class="masa-atomica">251.079</span>
+            <span class="ionizacion">608</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁰ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 13; grid-row-start: 10;">
+            <span class="numero">99</span>
+            <h3 class="simbolo">Es</h3>
+            <p class="nombre">Einstenio</p>
+            <span class="masa-atomica">252.08</span>
+            <span class="ionizacion">619</span>
+            <span class="configuración-electrónica">[Rn] 5f¹¹ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 14; grid-row-start: 10;">
+            <span class="numero">100</span>
+            <h3 class="simbolo">Fm</h3>
+            <p class="nombre">Fermio</p>
+            <span class="masa-atomica">257.1</span>
+            <span class="ionizacion">627</span>
+            <span class="configuración-electrónica">[Rn] 5f¹² 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 15; grid-row-start: 10;">
+            <span class="numero">101</span>
+            <h3 class="simbolo">Md</h3>
+            <p class="nombre">Mendelevio</p>
+            <span class="masa-atomica">258.09</span>
+            <span class="ionizacion">635</span>
+            <span class="configuración-electrónica">[Rn]5f¹³ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 16; grid-row-start: 10;">
+            <span class="numero">102</span>
+            <h3 class="simbolo">No</h3>
+            <p class="nombre">Nobelio</p>
+            <span class="masa-atomica">259.1</span>
+            <span class="ionizacion">642</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 7s²</span>
+        </div>
+        <div class="elemento actinidos" style="grid-column-start: 17; grid-row-start: 10;">
+            <span class="numero">103</span>
+            <h3 class="simbolo">Lr</h3>
+            <p class="nombre">Lawrencio</p>
+            <span class="masa-atomica">262.11</span>
+            <span class="ionizacion">470</span>
+            <span class="configuración-electrónica">[Rn]5f¹⁴ 6d¹ 7s²</span>
+        </div>
+    </div>
+
+    <h2>Leyenda</h2>
+    <div class="leyenda">
+        <div class="leyenda-item"><span class="color-box nometal"></span>No metal</div>
+        <div class="leyenda-item"><span class="color-box gasnoble"></span>Gas noble</div>
+        <div class="leyenda-item"><span class="color-box metalesalcalinos"></span>Metal alcalino</div>
+        <div class="leyenda-item"><span class="color-box alcalinoterreos"></span>Alcalinotérreo</div>
+        <div class="leyenda-item"><span class="color-box metaloides"></span>Metaloide</div>
+        <div class="leyenda-item"><span class="color-box halogenos"></span>Halógeno</div>
+        <div class="leyenda-item"><span class="color-box otrosmetales"></span>Otro metal</div>
+        <div class="leyenda-item"><span class="color-box metales-transicion"></span>Metal de transición</div>
+        <div class="leyenda-item"><span class="color-box lantanidos"></span>Lantánido</div>
+        <div class="leyenda-item"><span class="color-box actinidos"></span>Actínido</div>
+    </div>
+
+
+   
+</body>
+</html>

@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+  display: inline-block;
+  background-color: #16a085;
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 3.5rem;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 2px #000;
+  text-transform: uppercase;
+}
+
+
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 1500px;
+    margin: 20px auto;
+}
+
+.periodo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.elemento {
+    position: relative; 
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.elemento:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.elemento .masa-atomica {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.5em;
+    color: #333;
+}
+.elemento .configuración-electrónica {
+    position: static;
+    top: 5px;
+    right: 5px;
+    font-size: 0.6em;
+    color: #333;
+}
+.elemento .ionizacion {
+    position: static;
+    top: 5px;
+    right: 5px;
+    font-size: 0.6em;
+    color: #333;
+}
+.elemento .numero {
+    font-size: 0.7em;
+    align-self: flex-start;
+    color: #555;
+}
+
+.elemento .simbolo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.elemento .nombre {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.nometal { background-color: #ff8c40; }
+.gasnoble { background-color: #1fce2e; }
+.metalesalcalinos { background-color: #0d08fa; color: white;}
+.alcalinoterreos { background-color: #f8fc24; }
+.metaloides { background-color: #fc4cb2; }
+.halogenos { background-color: #1e811a; color: white;}
+.otrosmetales { background-color: #7c0394; color: white;}
+.metales-transicion { background-color: #09a5ff; }
+.lantanidos { background-color: #c2c2c2; }
+.actinidos { background-color: #549278; }
+
+.leyenda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.leyenda-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .tabla {
+        gap: 2px;
+    }
+
+    .elemento {
+        min-height: 60px;
+        padding: 2px;
+    }
+
+    .elemento .simbolo {
+        font-size: 1em;
+    }
+
+    .elemento .nombre, .elemento .numero {
+        font-size: 0.6em;
+    }
+}
+
+/* Ubicaciones específicas */
+.masa-l { top: -0.8rem; left: 7rem; }
+.masa-l::before { top: 20px; right: 50px; }
+
+.ionizacion-l { top: 4rem; left: -15rem; }
+.ionizacion-l::before { top: 4px; right: -50px; width: 30px; }
+
+.numero-l { top: 0.3rem; left: -8.7rem; }
+.numero-l::before { top: 10px; right: -40px; width: 40px; }
+
+.simbolo-l{ top: 1.8rem; left: 7rem; }
+.simbolo-l::before { top: 10px; right: 60px; width: 70px; }
+
+.nombre-l{ top: 3rem; left: -5rem; }
+.nombre-l::before { top: 10px; left: 50px; width: 50px; }
+
+.config-l{ top: 4rem; left: 7.7rem; }
+.config-l::before { top: 14px; right: 100px; width: 1px;}
+
+.elemento-ej {
+  position: relative; 
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-color: #09a5ff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.elemento-ej:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.mass {
+  position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.5em;
+    color: #333;
+}
+
+.ionization {
+  position: static;
+    top: 5px;
+    right: 5px;
+    font-size: 0.6em;
+    color: #333;
+}
+
+.atomic-number-ej {
+    font-size: 0.7em;
+    align-self: flex-start;
+    color: #555;
+}
+
+.symbol-ej {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.name-ej {
+  font-size: 0.8em;
+    margin: 0;
+}
+
+.config {
+  position: static;
+    top: 5px;
+    right: 5px;
+    font-size: 0.6em;
+    color: #333;
+}
+
+
+/* --- ETIQUETAS Y FLECHAS --- */
+.etiquetas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.linea {
+  position: absolute;
+  font-size: 13px;
+  background: #fff;
+  padding: 2px 4px;
+}
+
+.linea::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background: #000;
+}
