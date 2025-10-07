@@ -8,7 +8,16 @@ body {
 }
 
 h1, h2 {
-    color: #333;
+    display: inline-block;
+  background-color: #16a085;
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 3.5rem;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 2px #000;
+  text-transform: uppercase;
 }
 
 
@@ -135,4 +144,107 @@ h1, h2 {
     .elemento .nombre, .elemento .numero {
         font-size: 0.6em;
     }
+}
+
+/* Ubicaciones específicas */
+.masa-l { top: -0.8rem; left: 7rem; }
+.masa-l::before { top: 20px; right: 50px; }
+
+.ionizacion-l { top: 4rem; left: -15rem; }
+.ionizacion-l::before { top: 4px; right: -50px; width: 30px; }
+
+.numero-l { top: 0.3rem; left: -8.7rem; }
+.numero-l::before { top: 10px; right: -40px; width: 40px; }
+
+.simbolo-l{ top: 1.8rem; left: 7rem; }
+.simbolo-l::before { top: 10px; right: 60px; width: 70px; }
+
+.nombre-l{ top: 3rem; left: -5rem; }
+.nombre-l::before { top: 10px; left: 50px; width: 50px; }
+
+.config-l{ top: 4rem; left: 7.7rem; }
+.config-l::before { top: 14px; right: 100px; width: 1px;}
+
+.elemento-ej {
+  position: relative; 
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-color: #09a5ff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.elemento-ej:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.mass {
+  position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.5em;
+    color: #333;
+}
+
+.ionization {
+  position: static;
+    top: 5px;
+    right: 5px;
+    font-size: 0.6em;
+    color: #333;
+}
+
+.atomic-number-ej {
+    font-size: 0.7em;
+    align-self: flex-start;
+    color: #555;
+}
+
+.symbol-ej {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.name-ej {
+  font-size: 0.8em;
+    margin: 0;
+}
+
+.config {
+  position: static;
+    top: 5px;
+    right: 5px;
+    font-size: 0.6em;
+    color: #333;
+}
+
+
+/* --- ETIQUETAS Y FLECHAS --- */
+.etiquetas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.linea {
+  position: absolute;
+  font-size: 13px;
+  background: #fff;
+  padding: 2px 4px;
+}
+
+.linea::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background: #000;
 }
