@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Determinar Fuerza</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/force.js" defer></script>
+</head>
+<body>
+	<div id="container" class="container">
+		<div id="row" class="row">
+			<div class="col" id="col">
+				
+				<div class="mb-3">
+					<label for="mass" class="form-label">Mass</label>
+					<input type="number" class="form-control" id="mass" placeholder="Enter a mass">
+				</div>
+				<div class="mb-3">
+					<label for="acceleration" class="form-label">Acceleration</label>
+					<input type="number" class="form-control" id="acceleration" placeholder="Enter an acceleration">
+				</div>
+				<div id="force" class="alert alert-primary" role="alert">
+					The force is: <span id="force">0</span> N
+				</div>
+				<button id="btn" class="btn btn-primary" onclick="forceCalc()">Calculate</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

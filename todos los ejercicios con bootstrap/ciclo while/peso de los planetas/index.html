@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cacular peso en varios planetas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="js/planetas.js" defer></script>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div id="row" class="row">
+            <div class="col" id="col">
+                <div class="mb-3">
+                    <label for="mass" class="form-label">Masa</label>
+                    <input type="number" class="form-control" id="mass" placeholder="Ingrese masa">
+                </div>
+                <select id="planet" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                    <option selected>Seleccione un Planeta</option>
+                    <option value="1">Tierra</option>
+                    <option value="2">Marte</option>
+                    <option value="3">Jupiter</option>
+                </select>
+                <div id="result" class="alert alert-primary" role="alert">
+                    El peso es: <span id="weight">0</span>
+                </div>
+                <div id="result" class="alert alert-primary" role="alert">
+                    numero de veces usado: <span id="cont">0</span>
+                </div>
+                <div id="result" class="alert alert-primary" role="alert">
+                    El peso total calculado es: <span id="weightTotal">0</span>
+                </div>
+                <button id="btn" class="btn btn-primary" onclick="calculo()">Calcular Peso</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

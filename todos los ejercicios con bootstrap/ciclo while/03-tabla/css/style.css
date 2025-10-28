@@ -1,0 +1,19 @@
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+    justify-content: start; 
+}
+
+.tabla > div {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #9ab4cf;
+}
+
+.titulo {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: rgb(78, 78, 180);
+}

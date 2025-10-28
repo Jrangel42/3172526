@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>segunda ley de newton</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+	<script src="js/epg.js" defer></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="masa" class="form-label">Ingrese masa</label>
+                    <input type="number" class="form-control" id="mass" placeholder="Ingrese masa">
+                </div>
+                <div class="mb-3">  
+                    <label for="aceleracion" class="form-label">ingrese peso</label>
+                    <input type="number" class="form-control" id="heigth" placeholder="Ingrese peso">
+                </label>
+                </div>
+                <div id="result" class="alert alert-primary" role = "alert">
+                    fuerzas totales: <span id="energyPotential">0</span><br>
+                    el calculo se hizo: <span id="count">0</span> veces
+                </div>
+                <button id="btn" class="btn btn-primary" onclick="EPG()">Calcular EPG</button>
+                </div>
+
+            </div>
+    </div>
+</body>
+</html>

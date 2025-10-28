@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promedio de 3 notas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+	<script src="js/promedio.js" defer></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="row" class="row">
+            <div class="col" id="col">
+                
+                <div class="mb-3">
+                    <label for="noteOne" class="form-label">noteOne</label>
+                    <input type="number" class="form-control" id="noteOne" placeholder="Ingrese la primera nota">
+                </div>
+                <div class="mb-3">
+                    <label for="noteTwo" class="form-label">noteTwo</label>
+                    <input type="number" class="form-control" id="noteTwo" placeholder="Ingrese la segunda nota">
+                </div>
+                <div class="mb-3">
+                    <label for="noteThree" class="form-label">noteThree</label>
+                    <input type="number" class="form-control" id="noteThree" placeholder="Ingrese la tercera nota">
+                </div>
+                <div id="average" class="alert alert-primary" role="alert">
+                    El promedio es: <span id="promedio">0</span>
+                </div>
+                <button id="btn" class="btn btn-primary" onclick="add()">Calcular Promedio</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

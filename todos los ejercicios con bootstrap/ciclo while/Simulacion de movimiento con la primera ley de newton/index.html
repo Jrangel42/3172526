@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Simulación de Movimiento (1ª Ley de Newton)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta la ruta a tus archivos CSS -->
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/simulacion-movimiento.js" defer></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Simulación de Movimiento (1ª Ley de Newton)</h3>
+                <p class="mb-0">El programa finalizará cuando ingreses una fuerza de 0.</p>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-primary" onclick="simularMovimiento()">Iniciar Simulación</button>
+            </div>
+            <div id="resultados-container" class="card-footer hidden">
+                <h4>Resultados de la Simulación:</h4>
+                <ul id="lista-resultados" class="list-group mb-3"></ul>
+                <div id="resumen-final">
+                    <h5>Resumen Final</h5>
+                    <p>Tiempo total en movimiento: <strong id="tiempo-total">0</strong> s</p>
+                    <p>Distancia total recorrida: <strong id="distancia-total">0</strong> m</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

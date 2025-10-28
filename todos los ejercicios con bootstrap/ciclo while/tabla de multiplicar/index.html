@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tabla de Multiplicar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="js/table.js" defer></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="mb-3">
+        <label for="tabla" class="form-label">Tabla</label>
+        <input type="number" class="form-control" id="tabla" placeholder="Ingrese el numero de tablas a generar">
+        </div>
+        <div class="mb-3">
+        <label for="multiplicador" class="form-label">Multiclicador</label>
+        <input type="number" class="form-control" id="multiplicador" placeholder="Ingrese el multiplicador hasta donde llegara la tabla">
+        </div>
+        <button id="btn" class="btn btn-primary" onclick="tab()">Generar Tabla</button>
+
+        <div class="resultados-container mt-4">
+            <h4>Resultados:</h4>
+            <div id="tabla-resultados" class="tabla"></div>
+        </div>
+    </div>
+</body>
+</html>

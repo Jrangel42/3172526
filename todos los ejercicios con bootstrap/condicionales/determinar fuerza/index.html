@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Determinar Fuerza</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+	<script src="js/determinar.js" defer></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="row" class="row">
+            <div class="col" id="col">
+                
+                <div class="mb-3">
+                    <label for="mass" class="form-label">Masa (kg)</label>
+                    <input type="number" class="form-control" id="mass" placeholder="Ingrese su masa">
+                </div>
+                <div class="mb-3">
+                    <label for="aceleration" class="form-label">Aceleración (m/s²)</label>
+                    <input type="number" class="form-control" id="aceleration" placeholder="Ingrese su aceleración">
+                </div>
+                <div id="result" class="alert alert-primary" role="alert">
+                    La fuerza es: <span id="force">0</span> N
+                </div>
+                <div id="result" class="alert alert-primary" role="alert">
+                    Nivel de fuerza: <span id="levelForce">--</span>
+                </div>
+                <button id="btn" class="btn btn-primary" onclick="calcularFuerza()">Calcular Fuerza</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

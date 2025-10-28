@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cálculo de Fuerza Resultante</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/newton.js" defer></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Cálculo de Fuerza </h3>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="cantidad" class="form-label">Cantidad de cálculos a realizar:</label>
+                    <input type="number" class="form-control" id="cantidad" placeholder="Ej: 3" min="1">
+                </div>
+                <button class="btn btn-primary" onclick="fuerza()">Iniciar Cálculos</button>
+            </div>
+            <div id="resultados-container" class="card-footer hidden">
+                <h4>Resultados:</h4>
+                <ul id="lista-resultados" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Caida Libre</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+	<script src="js/caida.js" defer></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="row" class="row">
+            <div class="col" id="col">
+                
+                <div class="mb-3">
+                    <label for="bodyOne" class="form-label">Masa del Cuerpo 1 (kg)</label>
+                    <input type="number" class="form-control" id="bodyOne" placeholder="Ingrese la masa del cuerpo 1">
+                </div>
+                <div class="mb-3">
+                    <label for="bodyTwo" class="form-label">Masa del Cuerpo 2 (kg)</label>
+                    <input type="number" class="form-control" id="bodyTwo" placeholder="Ingrese la masa del cuerpo 2">
+                </div>
+                <div id="weightOne" class="alert alert-primary" role="alert">
+                    Fuerza Gravitacional Cuerpo 1: <span id="weightOne">0</span> N
+                </div>
+                <div id="weightTwo" class="alert alert-primary" role="alert">
+                    Fuerza Gravitacional Cuerpo 2: <span id="weightTwo">0</span> N
+                </div>
+                <div id="result" class="alert alert-primary" role="alert">
+                    <span id="weight">--</span>
+                </div>
+                <button id="btn" class="btn btn-primary" onclick="caidaLibre()">Calcular</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

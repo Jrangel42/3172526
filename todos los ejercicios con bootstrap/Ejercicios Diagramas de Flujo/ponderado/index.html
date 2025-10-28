@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promedio Ponderado de 3 notas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="js/ponderado.js"></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="row" class="row">  
+            <div class="col" id="col">
+                <div class="mb-3">
+                    <label for="noteOne" class="form-label">Nota 1</label>
+                    <input type="number" class="form-control" id="noteOne" placeholder="Ingrese la primera nota">
+                </div>
+                <div class="mb-3">
+                    <label for="noteTwo" class="form-label">Nota 2</label>
+                    <input type="number" class="form-control" id="noteTwo" placeholder="Ingrese la segunda nota">
+                </div>
+                <div class="mb-3">
+                    <label for="noteThree" class="form-label">Nota 3</label>
+                    <input type="number" class="form-control" id="noteThree" placeholder="Ingrese la tercera nota">
+                </div>
+                <div id="result" class="alert alert-primary" role="alert">
+                    La nota final es: <span id="finalNote">0</span>
+                </div>
+                <button id="btn" class="btn btn-primary" onclick="notes()">Calcular Nota Final</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

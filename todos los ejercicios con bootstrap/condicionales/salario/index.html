@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Carlular salario y otros descuentos</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+	<script src="js/salario.js" defer></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="row" class="row">
+            <div class="col" id="col">
+                <label for="salario" class="form-label">Salario a calcular</label>
+                <input type="number" class="form-control" id="salario" placeholder="Ingrese el salario">    
+                
+                <div id="result" class="alert alert-primary" role="alert">
+                    Descuentos totales: <span id="descuentos">0</span><br>
+                    Salario final a pagar: <span id="salarioFinal">0</span>
+                </div>
+                <button id="btn" class="btn btn-primary" onclick="otrosDescuentos()">Calcular Salario Final</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

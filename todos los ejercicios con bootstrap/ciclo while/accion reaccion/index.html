@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tercera Ley de Newton (Acción-Reacción)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta la ruta a tus archivos CSS -->
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/accion-reaccion.js" defer></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Tercera Ley de Newton: Acción y Reacción</h3>
+                <p class="mb-0">El programa finalizará cuando ingreses una fuerza de 0.</p>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-primary" onclick="iniciarSimulacion()">Iniciar Simulación</button>
+            </div>
+            <div id="resultados-container" class="card-footer hidden">
+                <h4>Resultados de las Iteraciones:</h4>
+                <ul id="lista-resultados" class="list-group mb-3"></ul>
+                <div id="resumen-final">
+                    <h5>Resumen Final</h5>
+                    <p>Suma total de fuerzas aplicadas: <strong id="suma-fuerzas">0</strong> N</p>
+                    <p>Cantidad de fuerzas ingresadas: <strong id="cantidad-fuerzas">0</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

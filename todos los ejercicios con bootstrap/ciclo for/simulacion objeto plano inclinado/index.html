@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Simulación en Plano Inclinado</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta la ruta a tus archivos CSS -->
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/plano.js" defer></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Simulación de Objeto en Plano Inclinado</h3>
+                <p class="mb-0">F_paralela = m * g * sin(θ)</p>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="masa" class="form-label">Masa del objeto (kg):</label>
+                    <input type="number" class="form-control" id="masa" placeholder="Ej: 10" min="0">
+                </div>
+                <label class="form-label">Rango de ángulos (en grados):</label>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="angulo-inicio" placeholder="Ángulo inicial (Ej: 0)">
+                    <input type="number" class="form-control" id="angulo-fin" placeholder="Ángulo final (Ej: 90)">
+                </div>
+                <button class="btn btn-primary" onclick="calcularFuerzasPlano()">Calcular Fuerzas</button>
+            </div>
+            <div id="resultados-container" class="card-footer hidden">
+                <h4>Resultados:</h4>
+                <ul id="lista-resultados" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

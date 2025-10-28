@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>segunda ley de newton</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+	<script src="js/2newton.js" defer></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="row" class="row">
+            <div class="col" id="col">
+                <div class="mb-3">
+                    <label for="masa" class="form-label">Ingrese masa</label>
+                    <input type="number" class="form-control" id="mass" placeholder="Ingrese masa">
+                </div>
+                <div class="mb-3">
+                    <label for="aceleracion" class="form-label">ingrese aceleracion</label>
+                    <input type="number" class="form-control" id="aceleration" placeholder="Ingrese aceleracion">
+                </div>
+                <div id="result" class="alert alert-primary" role="alert">
+                    fuerzas totales: <span id="force">0</span><br>
+                    el calculo se hizo: <span id="cont">0</span> veces
+                </div>
+                <button id="btn" class="btn btn-primary" onclick="calculateForce()">Calcular Salario Final</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

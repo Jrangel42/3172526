@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Cálculo de Trabajo Mecánico</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta la ruta a tus archivos CSS -->
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/trabajo.js" defer></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Cálculo de Trabajo Mecánico (W = F × d)</h3>
+                <p class="mb-0">El programa se repetirá hasta que ingreses una distancia negativa.</p>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-primary" onclick="calcularTrabajo()">Iniciar Cálculos</button>
+            </div>
+            <div id="resultados-container" class="card-footer hidden">
+                <h4>Resultados de los Cálculos:</h4>
+                <ul id="lista-resultados" class="list-group mb-3"></ul>
+                <div id="resumen-final">
+                    <h5>Resumen Final</h5>
+                    <p>Suma total del trabajo realizado: <strong id="suma-trabajo">0</strong> J</p>
+                    <p>Cantidad de cálculos realizados: <strong id="cantidad-calculos">0</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

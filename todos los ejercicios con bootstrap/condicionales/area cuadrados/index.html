@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Determinar Fuerza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="js/areacuadrados.js" defer></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="row" class="row">
+            <div class="col" id="col">
+                <div class="mb-3">
+                    <label for="sideOne" class="form-label">Side One</label>
+                    <input type="number" class="form-control" id="sideOne" placeholder="Enter side one">
+                </div>
+                <div class="mb-3">
+                    <label for="sideTwo" class="form-label">Side Two</label>
+                    <input type="number" class="form-control" id="sideTwo" placeholder="Enter side two">
+                </div>
+                <div class="mb-3">
+                    <label for="sideThree" class="form-label">Side Three</label>
+                    <input type="number" class="form-control" id="sideThree" placeholder="Enter side three">
+                </div>
+                <div id="result" class="alert alert-primary" role="alert">
+                    Cuadrado uno: <span id="areaOne">0</span><br>
+                    Cuadrado dos: <span id="areaTwo">0</span><br>
+                    Cuadrado tres: <span id="areaThree">0</span><br>
+                    <span id="comparisonResult"></span>
+                </div>
+                <div id="result" class="alert alert-primary" role="alert">
+                    Comparacion: <span id="comparacion"> </span>
+                </div>
+                <button id="btn" class="btn btn-primary" onclick="area()">Calculate Areas</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

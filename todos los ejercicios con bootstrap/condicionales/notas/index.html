@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Cálculo de Notas Finales</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/notas.js" defer></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Cálculo de Notas Finales</h3>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="nota1" class="form-label">Nota 1 (20%):</label>
+                    <input type="number" class="form-control" id="nota1" placeholder="Ej: 4.0" step="0.1" min="0" max="5">
+                </div>
+                <div class="mb-3">
+                    <label for="nota2" class="form-label">Nota 2 (35%):</label>
+                    <input type="number" class="form-control" id="nota2" placeholder="Ej: 3.5" step="0.1" min="0" max="5">
+                </div>
+                <div class="mb-3">
+                    <label for="nota3" class="form-label">Nota 3 (45%):</label>
+                    <input type="number" class="form-control" id="nota3" placeholder="Ej: 5.0" step="0.1" min="0" max="5">
+                </div>
+                <button class="btn btn-primary" onclick="calcularNotaFinal()">Calcular Nota Final</button>
+            </div>
+            <div id="resultado" class="alert m-3 hidden" role="alert">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
